@@ -414,7 +414,7 @@ html {
 	margin-top:max(3vw, 1.4em)
 }
 .how-to-help .nav.tab li a{
-	font-size:1.2rem;
+	font-size:clamp(1em, 1.5vw, 1.2rem);
 	font-weight:500;
 	color:var(--button-colo);
 	margin-bottom: max(2vw, 1.2rem);
@@ -425,9 +425,9 @@ html {
 	font-weight:600;
 }
 .how-to-help .tab-content p{
-	line-height:max(2.1vw, 1rem);
-	font-size:1em;
-	color:var(--dark-color);
+	line-height: max(2.1vw, 1.4rem);
+    font-size: clamp(.90em, 1vw, 1em);
+    color: var(--dark-color);
 }
 .how-to-help .tab-content a{
 	margin-top:max(1.8vw, .8rem)

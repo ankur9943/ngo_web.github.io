@@ -183,8 +183,9 @@ html {
 }
 .carousel-item img {
 	transition: all .6s ease-in-out 0s;
-	height: max(50vmin, 40vw, 22vh);
+	height: max(50vmin, 40vw, 20rem);
 	object-fit: cover;
+	
 }
 .carousel-item {
 	position: relative;

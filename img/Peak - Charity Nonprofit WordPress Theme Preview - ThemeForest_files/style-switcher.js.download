@@ -1,0 +1,63 @@
+jQuery.noConflict(); // Let go of $ to other libraries
+
+/* Remove a class */
+function remove_class_from_body(class_excerpt) {
+
+    var classList = jQuery('body').attr('class').split(/\s+/);
+    jQuery.each(classList, function (index, item) {
+
+        if (item.indexOf(class_excerpt) != -1) {
+            jQuery('body').removeClass(item);
+        }
+
+    });
+
+}
+
+jQuery(document).ready(function ($) {
+
+
+    /* --------------------- Switch to either Stretched or Boxed Layout ---------------------- */
+
+    /* Open Styleswitcher Appearance */
+    $('#styleswitcher-button').click(function () {
+        if ($('#styleswitcher-wrapper').css('left') != '0px') {
+            $('#styleswitcher-wrapper').css({"left": "0px"});
+            $(this).css({"left": "114px"});
+            $.cookie('mo_styleswitcher_open', "true", { path: '/' });
+        }
+        else {
+            $('#styleswitcher-wrapper').css({"left": "-116px"});
+            $('#styleswitcher-button').css({"left": "0px"});
+            $.cookie('mo_styleswitcher_open', "false", { path: '/' });
+        }
+    });
+
+    if ($.cookie('mo_styleswitcher_open') == "false") {
+        $('#styleswitcher-wrapper').css({"left": "-116px"});
+        $('#styleswitcher-button').css({"left": "0px"});
+    }
+
+
+    /* ----------------------- BG Color change ----------------------- */
+
+    jQuery('#styleswitcher-theme-skin ul li').each(function (index) {
+        var skin_color = $(this).attr('data-skin');
+        $(this).css('background-color', skin_color);
+
+        var new_url = peak.options.blog_url + '?skin=' + encodeURIComponent(skin_color);
+        $(this).find('a').attr("href", new_url);
+    });
+
+    /* --------------------- Reset all styles ---------------------- */
+
+    jQuery('#styleswitcher-reset-button').click(function () {
+
+        $.cookie('mo_theme_skin', null, { path: '/' });
+        $.cookie('mo_styleswitcher_open', null, { path: '/' });
+
+        location.reload(true);
+
+    });
+
+});

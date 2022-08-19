@@ -1,0 +1,22 @@
+/*
+Theme Name:     Peak Child
+Theme URI:      http://portfoliotheme.org/cosmic
+Description:    Child theme for the Peak Theme by LiveMesh
+Author:         LiveMesh
+Author URI:     http://themeforest.net/user/livemesh
+Template:       peak
+Version:        0.1.0
+*/
+
+/*
+This is a starter style.css file for your child theme. For more
+information about child themes, visit the following web page:
+http://codex.wordpress.org/Child_Themes
+*/
+
+/* Add your customizations below this line */
+
+.post-content .rslides-container {
+    max-height: 750px;
+    }
+

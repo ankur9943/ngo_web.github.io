@@ -1,0 +1,119 @@
+
+@media screen and (min-width: 992px){
+		
+	}
+
+
+	
+
+
+
+@media screen and (min-width: 768px){
+	.navbar-nav .dropdown-menu{
+		opacity: 0;
+		visibility: hidden;
+		min-width: 230px;
+		border-radius: 0%!important;
+		top: 100%;
+		perspective: 1000px;
+		box-shadow: inset 0px 16px 30px -32px #d53f34;
+		padding-block:1.2rem	
+	}
+	.dropdown:hover .dropdown-menu{
+		opacity: 1!important;
+		visibility: visible;
+		z-index: 2;	
+		animation: rotateMenu 500ms ease-in-out forwards!important;
+		transform-origin: top center;		
+	}
+	@keyframes rotateMenu {
+		0% {
+			transform: rotateX(-90deg);	
+		}
+		70% {
+			transform: rotateX(20deg) 
+		}
+		100% {
+			transform: rotateX(0deg)	
+		}
+	}
+	.navbar-nav .nav-link:hover span:after {
+		width: 100%;
+		right: auto;
+		left: 0;
+	}
+
+}
+
+@media screen and (max-width: 767px){
+	.offcanvas.offcanvas-end {
+	    height: 100vh;
+		z-index: 9;
+		
+	}
+	.how-to-help{
+	   background-size:cover
+	}
+	.offcanvas.offcanvas-end .navbar-nav .nav-link{
+		border-bottom: 1px solid rgba(255, 255, 255, .2);
+		padding-block: .7rem;
+		border-width: thin;
+	}
+	.offcanvas.offcanvas-end .navbar-nav:last-child{
+		border-bottom: 0px;
+	}
+	.offcanvas.offcanvas-end .navbar-nav .nav-item .dropdown-toggle{
+		display: flex;
+		justify-content: space-between;	
+	}
+}	
+
+
+@media screen and (max-width: 592px){
+	.caption-banner .caption-btn a:nth-child(2){
+		display: none;
+	}
+	.carousel-indicators{
+		right: 0px!important;
+		left: auto;
+		flex-flow: row;
+		top: auto;
+		gap: max(1vw, 2px);
+		bottom:0px;
+		margin-right: 4px;
+	}
+	.carousel-indicators [data-bs-target]{
+		width: 12px;
+		height: 12px;
+		
+	}
+	.caption-banner {	
+	left: 0;
+	top: 0;
+	right: 0;
+	margin-inline: auto;
+	text-align: center;
+	width: fit-content;
+	}
+
+	.Support,
+	.serch,
+	.rg-sign{
+		font-size: 80%;
+		gap:.5rem	
+	}
+	.Support h5{
+		font-size: 1em;
+	}
+	.product-1 .slick-prev{
+		left:-6px;
+		z-index: 1;	
+	}
+	.product-1 .slick-next{
+		left: auto;
+		right: 14px;
+	}
+	#myTab button{
+		padding: 8px;
+	}
+}

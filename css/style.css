@@ -914,40 +914,38 @@ viewBox="0 0 513.307 513.307"><g><path d="m118.356 340.559c-3.467-2.267-8.115-1.
 	position: relative;
 	transition: all 0.4s;
     -webkit-transition: all 0.4s;
-	width: fit-content;
+	overflow:hidden
 }
-.impact-grid .impct-box img{
-	overflow-x: hidden
+.impact-grid .impct-box:hover img{
+  	transform:scale(1.1); 
 }
-.impact-grid .impct-box:hover{
-  	transform:scale(1.1)
-}
-
 .impact-grid .inner-text::before{
 	content: "";
     position: absolute;
     left: 10px;
-right: 10px;
+	right: 10px;
     bottom: 0;
     opacity: 0.9;
     z-index: -1;
     height: 100%;
-  
-	overflow-x: hidden
 }
 .impact-grid .impct-box:hover .inner-text{
-	padding-top:140px!important;
-	padding-bottom:140px!important
-
+	padding-top:120px!important;
+	padding-bottom:120px!important
 }
 .impact-grid .impct-box:hover .hiden-text{
-	transform:translateY(0%)
+	transform:translateY(0%);
 } 
 .impact-grid .hiden-text{
 	transform:translateY(150%);
 	display: block;
+	padding-top:max(4vw, 2rem);
+	text-decoration:underline
 }
-
+.impact-grid .hiden-text:hover{
+	text-decoration:none;
+	color:var(--dark-color)
+}
 .impact-grid .inner-text.in_1::before{
 	background-color:var(--text-secondery)
 }

@@ -147,7 +147,8 @@ html {
 .about-text .main-button,
 .fund-text a,
 .send,
-.how-to-help .tab-content a{
+.how-to-help .tab-content a,
+.submit{
 	border: 1px solid #f8f9fa;
     font-size: clamp(.88em, 2vw, 1em);
     transition: all .6s ease-in-out 0s;
@@ -878,7 +879,8 @@ viewBox="0 0 513.307 513.307"><g><path d="m118.356 340.559c-3.467-2.267-8.115-1.
 	font-size:1em;
 	padding-left:1em
 }
-.send{
+.send,
+.submit{
 	background-color:var(--button-colo);
 	color:var(--base-color)
 }
@@ -970,5 +972,36 @@ viewBox="0 0 513.307 513.307"><g><path d="m118.356 340.559c-3.467-2.267-8.115-1.
 	color:var(--base-color);
 	overflow: hidden;
 }
+
+.Sign_up_form .sign-up-fill label{
+	font-size:.80em;
+	color:var(--button-colo);
+	margin-bottom:.2rem;
+	font-weight:500
+}
+.Sign_up_form .sign-up-fill {
+	margin-bottom:1rem;
+}
+.Sign_up_form .sign-up-fill .form-control {
+	border-radius:20px!important;
+	padding:.6rem .8rem
+}
+.Sign_up_form .sign-up-fill .form-control:focus,
+.Sign_up_form .sign-up-fill .form-control:target{
+	border:1px solid var(--button-colo);
+	box-shadow:none
+}
+.need-it p,
+.need-it ul li,
+.Volunteer-form .row form p{
+	font-size:.82em;
+	color:#666666;
+	line-height: max(2.280vw, 1.4em);
+	margin-bottom:max(1.5vw, 1.2rem);
+	font-weight:300
+
+}
+
+
                                                         
 

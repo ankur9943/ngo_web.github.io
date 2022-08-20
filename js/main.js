@@ -27,10 +27,18 @@ $(document).ready(function () {
   $(".project").hover3d({
     selector: ".project__card",
     shine: true,
+  })
+ 
   });
-});
-$(".top").click(function () {
-$("html, body").animate({
-scrollTop: 0
-}, 0)
-})
+
+
+    $(".top").click(function () {
+      $("html, body").animate({
+        scrollTop: 0
+      }, 0)
+    });
+
+    $(function(){
+      $("#default").datetimepicker();
+
+    });

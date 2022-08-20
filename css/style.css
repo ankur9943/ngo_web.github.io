@@ -922,16 +922,15 @@ viewBox="0 0 513.307 513.307"><g><path d="m118.356 340.559c-3.467-2.267-8.115-1.
 .impact-grid .inner-text::before{
 	content: "";
     position: absolute;
-    left: 10px;
-	right: 10px;
+    left: 20px;
+	right: 20px;
     bottom: 0;
     opacity: 0.9;
     z-index: -1;
     height: 100%;
 }
 .impact-grid .impct-box:hover .inner-text{
-	padding-top:120px!important;
-	padding-bottom:120px!important
+	padding-block: clamp(10vw, 6rem, 2.2em);
 }
 .impact-grid .impct-box:hover .hiden-text{
 	transform:translateY(0%);

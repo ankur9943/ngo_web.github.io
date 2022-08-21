@@ -53,8 +53,7 @@ html {
 /*====slider======css===Start===*/
 .swiper {
 	width: 100%;
-	height: 270px;
-	max-height:100%
+	height: inherit;
 }
 
 .swiper-slide {
@@ -159,10 +158,12 @@ html {
 	justify-content: center;
 	align-items: center;
 }
-.donate-btn:hover{
+.donate-btn:hover
+{
 	background-color: transparent;
 }
-.donate{
+.donate,
+.donate-btn{
 	background: var(--base-color);
     color: var(--button-colo);
     box-shadow: inset 2px 0px 15px -2px #dc354591;
@@ -1073,8 +1074,41 @@ viewBox="0 0 513.307 513.307"><g><path d="m118.356 340.559c-3.467-2.267-8.115-1.
 	padding-top:.8rem;
 }
 
+#donate{
 
-
+}
+#donate .col-md-8{
+ background-color:#f6f6f6;
+ padding:1rem;
+ border:2px solid white
+}
+#donate form input{
+	box-shadow:none;
+	border-radius:0px;
+	border:none;
+	margin-bottom:max(1.5vw, 1rem);
+	padding-block:.8em;
+	font: .90em sans-serif;
+}
+.doonate-heading ul li{
+	display: flex;
+	justify-content:space-evenly;
+	flex-wrap:wrap;
+	padding-bottom:max(2vw, 1.2rem);
+	
+}
+.doonate-heading ul li >a{
+	border-radius:50px;
+	padding: .5rem 1rem;
+	color:var(--base-color)!important;
+	background-color:var(--text-primery)
+}
+.doonate-heading ul li >a:hover,
+.doonate-heading ul li >a.active,
+.doonate-heading ul li >a:focus{
+	background-color:var(--dark-color)
+	
+}
 
 
 

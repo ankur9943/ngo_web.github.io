@@ -10,6 +10,18 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+var swiper = new Swiper(".gallery", {
+  direction: "horizontal",
+  slidesPerView: 3,
+  spaceBetween: 5,
+  mousewheel: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+
 
 
 

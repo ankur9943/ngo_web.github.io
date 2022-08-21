@@ -64,13 +64,120 @@
                   </li>
                </ul>
                <form>
-                  <button class="donate-btn donate">Donate</button>
+                  <button class="donate-btn donate" type="button" data-bs-toggle="modal" 
+                   
+                   data-bs-target="#donate" data-bs-whatever="donate">Donate</button>
                </form>
             </div>
          </div>
       </div>
    </nav>
    <!--=======navgition========bar==Start====-->
+
+
+
+         <!-- Vertically centered modal -->
+            <div class="modal fade" id="donate" aria-hidden="true" aria-labelledby="donateToggleLable" tabindex="-1">
+               <div class="modal-dialog modal-dialog-centered  modal-lg">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="modal-content">
+                     <div class="row">
+                        <div class="col-md-8">
+                           <div class="doonate-heading">
+                              <h4>Donate to improve life standard of kids</h4>
+                              <div class="donate-tab">
+                                 <ul class="tab nav justify-content-evenly" id="option">
+                                    <li class="nav-item">
+                                       <a href="#req" class="nav-linkactive" data-bs-toggle="tab" date-b-target="#req">Recurring</a>
+                                       <a href="#one" class="nav-link" data-bs-toggle="tab" date-b-target="#one">One Time</a>
+                                    </li>
+                                 </ul>
+                                 <div class="tab-content">
+                                    <div class="tab-pane active" id="req">
+                                       <form>
+                                       <div class="donate-form row">
+                                         
+                                          <h5 class="text-center">Personal Details</h5>
+                                         
+                                          <div class="col-md-6"><input type="name" id="name" placeholder="Frist Name" class="form-control"></div>
+                                          <div class="col-md-6"><input type="name" id="l-name" placeholder="Last Name" class="form-control"></div>
+                                          <div class="col-12"><input type="email" id="d-email" placeholder="Email" class="form-control "></div>
+                                          <div class="col-12"><input type="text" id="d-add" placeholder="Address" class="form-control  "></div>
+                                      
+                                       </div>
+                                    </form>
+                                       <div class="d-form-amount">
+                                          <h5>How much would you like to donate?</h5>
+                                          <ul class="tab nav justify-content-evenly" id="requrment">
+                                             <li class="nav-item">
+                                                <a href="#amount_1" class="nav-link  active" data-bs-toggle="tab" date-b-target="#amount_1">$ 100</a>
+                                                <a href="#amount_2" class="nav-link" data-bs-toggle="tab" date-b-target="#amount_2">$ 200</a>
+                                                <a href="#amount_3" class="nav-link " data-bs-toggle="tab" date-b-target="#amount_3">$ 300</a>
+                                             </li>
+                                          </ul>
+                                          <div class="tab-content">
+                                             <div class="tab-pane active" id="amount_1">$ 100</div>
+                                             <div class="tab-pane" id="amount_2">$ 200</div>
+                                             <div class="tab-pane" id="amount_3">$ 300</div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="one">
+                                       <div class="donate-form">
+                                          <h5 class="text-center">Personal Details</h5>
+                                          <input type="name" id="name" placeholder="Frist Name" class="form-control">
+                                          <input type="name" id="l-name" placeholder="Last Name" class="form-control">
+                                          <input type="email" id="d-email" placeholder="Email" class="form-control">
+                                          <input type="text" id="d-add" placeholder="Address" class="form-control">
+                                       </div>
+                                       <div class="d-form-amount">
+                                          <h5>How much would you like to donate?</h5>
+                                          <ul>
+                                             <li>
+                                                <a href="#amount_1" data-bs-toggle="tab" date-b-target="#amount_1">Recurring</a>
+                                                <a href="#amount_2" data-bs-toggle="tab" date-b-target="#amount_2">One Time</a>
+                                                <a href="#amount_3" data-bs-toggle="tab" date-b-target="#amount_3">One Time</a>
+                                             </li>
+                                          </ul>
+                                          <div class="tab-content">
+                                             <div class="tab-pane" id="amount_1">$ 100</div>
+                                             <div class="tab-pane" id="amount_2">$ 100</div>
+                                             <div class="tab-pane" id="amount_3">$ 100</div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <button type="submit" class="donate-btn">Donate</button>
+                                    <button type="submit" class="donate-_2" data-bs-dismiss="modal" aria-label="Close">Back</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="number">
+                              <ul>
+                                 <li><h2>12.5%</h2></li>
+                                 <li>
+                                    <h2>$ 500</h2>
+                                    <p>Current Collection</p>
+                                 </li>
+                                   
+                                 <li><h2>$ 2000</h2>
+                                    <p>Target Needed</p>
+                                 </li>
+                                    
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+           
+         
+        
+      
+     
+
    <!---==Ngo-banner-section======start=========-->
    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -301,7 +408,7 @@
          </div>
    </section>
    <!--==================about-Mision-==End==============-->
-   <div class=" container-fluid how-to-help">
+   <div class=" container-fluid how-to-help mt-30">
       <div class="container">
          <div class="row justify-content-end">
             <div class="col-xxl-6 col-lg-6 col-md-7">
@@ -420,7 +527,7 @@
    <!--==============Concluded Projects==End=====================-->
 
 
-   <section class="communtiy mt-30">
+   <!-- <section class="communtiy mt-30">
       <div class="container">
       <h2 class="text-center mb-3">Our Community</h2>
       <div class="our_Community-grid">
@@ -439,7 +546,7 @@
                   In the country's northwest lie ruins of Angkor Wat, a massive…
               </p>
               <a href="#">Learn More</a>
-            </div> -->
+            </div>
          </div>
          <div class="our_community_text">
             <img src="img/community-indore.jpg">
@@ -464,9 +571,9 @@
          </div>
       </div>
       </div>
-   </section>
+   </section> -->
    <!--=======------jion-volunter===============-->
-   <section class="fund mt-5">
+   <section class="fund mt-30">
       <div class="row">
          <div class="col-xl-7 col-md-6">
             <div class="fund-text">
@@ -488,10 +595,10 @@
    </section>
    <!--=======------jion-volunter===============-->
    <!--==================Testnimonial======Start===============-->
-   <section class="Help_us_world">
+   <!-- <section class="Help_us_world">
       <div class="row justify-content-center">
          <div class="col-xl-7 col-lg-8 col-md-8">
-            <div class="swiper mySwiper">
+            <div class="swiper mySwiper" style="height:270px">
                <div class="swiper-wrapper">
                   <div class="swiper-slide">
                      <div class="textnimonial text-center">
@@ -542,13 +649,44 @@
             </div>
          </div>
       </div>
-   </section>
+   </section> -->
    <!--============Testnimonial======End========-->
+ <div class="container-fluid my-5">
+      <div class="gallery-heading text-center mb-3">
+         <span>GALLERY</span>
+         <h2>Gallery</h2>
+      </div> 
+      <div class="swiper gallery">
+         <div class="swiper-wrapper">
+            <div class="gallery-img swiper-slide">
+               <img src="img/community-agra.jpg">
+            </div>
+            <div class="gallery-img swiper-slide">
+               <img src="img/community-agra.jpg">
+            </div>
+            <div class="gallery-img swiper-slide">
+               <img src="img/community-agra.jpg">
+            </div>
+            <div class="gallery-img swiper-slide">
+               <img src="img/community-agra.jpg">
+            </div>
+            <div class="gallery-img swiper-slide">
+               <img src="img/community-agra.jpg">
+            </div>
+            <div class="gallery-img swiper-slide">
+               <img src="img/community-agra.jpg">
+            </div>
+            <div class="gallery-img swiper-slide">
+               <img src="img/community-agra.jpg">
+            </div>
+         </div>
+      </div>
+   </div>
    <!--==========Latest-news===============-->
-   <div class="container mt-30">
+   <div class="container">
       <div class="news-heading text-center mb-4 pb-1">
          <span class="c-red">Blog</span>
-         <h2>Hopeful Foundation Blog</h2>
+         <h2>Hopeful Blog</h2>
       </div>
       <div class="news-grid">
          <div class="news-card ">

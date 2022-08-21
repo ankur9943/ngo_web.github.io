@@ -305,7 +305,7 @@ html {
 /*================Get-invoved========*/
 .get-invoved-grid{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(max(9vw, 10em), 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(max(9vw, 11.5em), 1fr));
 }
 .frist-involved{
 	display: flex;
@@ -879,9 +879,11 @@ viewBox="0 0 513.307 513.307"><g><path d="m118.356 340.559c-3.467-2.267-8.115-1.
 }
 .get-form label{
 	color: #75737f;
-	font-size:1em;
-	padding-left:1em
+    font-size: 1em;
+    padding-left: 1em;
+    color: var(--button-colo);
 }
+
 .send,
 .submit{
 	background-color:var(--button-colo);

@@ -75,93 +75,120 @@
    <!--=======navgition========bar==Start====-->
 
 
-
+<div class="container-fluid">
+ 
          <!-- Vertically centered modal -->
-            <div class="modal fade" id="donate" aria-hidden="true" aria-labelledby="donateToggleLable" tabindex="-1">
+            <div class="modal fade pe-0" id="donate" aria-hidden="true" aria-labelledby="donateToggleLable" tabindex="-1">
+               
                <div class="modal-dialog modal-dialog-centered  modal-lg">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                
                   <div class="modal-content">
+                     <button type="button" class="button-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
                      <div class="row">
                         <div class="col-md-8">
-                           <div class="doonate-heading">
-                              <h4>Donate to improve life standard of kids</h4>
+                           <div class="doonate-heading ">
+                              <h4 class="text-center">Donate to improve life standard of kids</h4>
+
+                        <!--=====tabs-donate-amount--=====start===-->
                               <div class="donate-tab">
-                                 <ul class="tab nav justify-content-evenly" id="option">
-                                    <li class="nav-item">
-                                       <a href="#req" class="nav-linkactive" data-bs-toggle="tab" date-b-target="#req">Recurring</a>
-                                       <a href="#one" class="nav-link" data-bs-toggle="tab" date-b-target="#one">One Time</a>
+                              <!--==========top=two=tab=====-->
+                                 <ul class="tab nav justify-content-center" id="option">
+                                    <li class="nav-item"> 
+                                       <a href="#req" class="nav-link active" data-bs-toggle="tab" date-b-target="#req">One Time</a>
+                                    </li>
+                                    <li>
+                                       <a href="#one" class="nav-link" data-bs-toggle="tab" date-b-target="#one">E-payment</a>
                                     </li>
                                  </ul>
+                              <!--======tab=main-contant==start=======-->
                                  <div class="tab-content">
+                                 <!--======tab=Recurring=content=======-->
                                     <div class="tab-pane active" id="req">
                                        <form>
-                                       <div class="donate-form row">
-                                         
-                                          <h5 class="text-center">Personal Details</h5>
-                                         
-                                          <div class="col-md-6"><input type="name" id="name" placeholder="Frist Name" class="form-control"></div>
-                                          <div class="col-md-6"><input type="name" id="l-name" placeholder="Last Name" class="form-control"></div>
-                                          <div class="col-12"><input type="email" id="d-email" placeholder="Email" class="form-control "></div>
-                                          <div class="col-12"><input type="text" id="d-add" placeholder="Address" class="form-control  "></div>
-                                      
-                                       </div>
-                                    </form>
+                                          <div class="donate-form row">
+                                             <h5 class="text-center">Personal Details</h5>
+                                             <div class="col-md-6"><input type="name" id="name" placeholder="Name" class="form-control"></div>
+                                             <div class="col-md-6"><input type="number" id="d-amount" placeholder="Donate amount" class="form-control"></div>
+                                            
+                                             <div class="col-12"><input type="email" id="d-email" placeholder="Email" class="form-control "></div>
+                                             <div class="col-12"><input type="text" id="d-add" placeholder="Address" class="form-control  "></div>
+                                             
+                                             <h6 class="text-center my-3">Bank Details</h6>
+                                             <div class="col-6"><input type="text" placeholder="Bank name" class="form-control"></div>
+                                             <div class="col-6"><input type="number" placeholder="Acount no." class="form-control"></div>
+                                             <div class="col-md-6"><input type="text" placeholder="IFSC code." class="form-control"></div>
+                                             
+                                          </div>
+                                       
                                        <div class="d-form-amount">
-                                          <h5>How much would you like to donate?</h5>
-                                          <ul class="tab nav justify-content-evenly" id="requrment">
-                                             <li class="nav-item">
-                                                <a href="#amount_1" class="nav-link  active" data-bs-toggle="tab" date-b-target="#amount_1">$ 100</a>
-                                                <a href="#amount_2" class="nav-link" data-bs-toggle="tab" date-b-target="#amount_2">$ 200</a>
-                                                <a href="#amount_3" class="nav-link " data-bs-toggle="tab" date-b-target="#amount_3">$ 300</a>
-                                             </li>
+                                          
+                                          <!-- <ul class="tab nav justify-content-center gap-md-2 gap-1" id="requrment">
+                                                                                       
+                                             <li class="nav-item"><a href="#amount_1" class="nav-link  active" data-bs-toggle="tab" date-b-target="#amount_1">$ 100</a></li>
+                                             <li class="nav-item"><a href="#amount_2" class="nav-link" data-bs-toggle="tab" date-b-target="#amount_2">$ 200</a></li>
+                                             <li class="nav-item"><a href="#amount_3" class="nav-link " data-bs-toggle="tab" date-b-target="#amount_3">$ 300</a></li>
+                                                                                       
                                           </ul>
-                                          <div class="tab-content">
+                                          <div class="tab-content" id="change-amount">
                                              <div class="tab-pane active" id="amount_1">$ 100</div>
                                              <div class="tab-pane" id="amount_2">$ 200</div>
                                              <div class="tab-pane" id="amount_3">$ 300</div>
-                                          </div>
+                                          </div> -->
                                        </div>
+                                       </form>
                                     </div>
-                                    <div class="tab-pane fade" id="one">
-                                       <div class="donate-form">
-                                          <h5 class="text-center">Personal Details</h5>
-                                          <input type="name" id="name" placeholder="Frist Name" class="form-control">
-                                          <input type="name" id="l-name" placeholder="Last Name" class="form-control">
-                                          <input type="email" id="d-email" placeholder="Email" class="form-control">
-                                          <input type="text" id="d-add" placeholder="Address" class="form-control">
-                                       </div>
+                                 <!--==========tab=One-Time=content--==========-->
+                                    <div class="tab-pane" id="one">
+                                       <form>
+                                          <div class="donate-form row">
+                                             <h5 class="text-center">Personal Details</h5>
+                                             <div class="col-md-12"><input type="name" id="name" placeholder="Name" class="form-control"></div>
+                                             
+                                            
+                                             <div class="col-12"><input type="email" id="d-email" placeholder="Email" class="form-control "></div>
+                                             <div class="col-12"><input type="text" id="d-add" placeholder="Address" class="form-control  "></div>
+                                             <div class="col-md-12"><input type="number" id="d-amount" placeholder="Donate amount" class="form-control"></div>
+                                            
+                                            
+                                          </div>
+                                       </form>
                                        <div class="d-form-amount">
-                                          <h5>How much would you like to donate?</h5>
-                                          <ul>
-                                             <li>
-                                                <a href="#amount_1" data-bs-toggle="tab" date-b-target="#amount_1">Recurring</a>
-                                                <a href="#amount_2" data-bs-toggle="tab" date-b-target="#amount_2">One Time</a>
-                                                <a href="#amount_3" data-bs-toggle="tab" date-b-target="#amount_3">One Time</a>
-                                             </li>
-                                          </ul>
-                                          <div class="tab-content">
-                                             <div class="tab-pane" id="amount_1">$ 100</div>
+                                       
+                                       <!----=======fixed-amount-tabs=======-->
+                                       <ul class="tab nav justify-content-center gap-md-2 gap-1 mt-4" id="requrment">
+                                                                                       
+                                          <li class="nav-item"><a href="#" class="nav-link"><img src="img/phonepe-logo-icon.svg"></a></li>
+                                          <li class="nav-item"><a href="#" class="nav-link"><img src="img/google-pay-icon.svg"></a></li>
+                                          <li class="nav-item"><a href="#" class="nav-link"><img src="img/paytm-icon.svg"></a></li>
+                                                                                    
+                                       </ul>
+
+                                         <!--  <div class="tab-content" id="change-amount">
+                                             <div class="tab-pane active" id="amount_1">$ 100</div>
                                              <div class="tab-pane" id="amount_2">$ 100</div>
                                              <div class="tab-pane" id="amount_3">$ 100</div>
-                                          </div>
+                                          </div> --->
+
                                        </div>
                                     </div>
-                                    <button type="submit" class="donate-btn">Donate</button>
+                                    <button type="submit" class="donate-f-btn">Donate</button>
                                     <button type="submit" class="donate-_2" data-bs-dismiss="modal" aria-label="Close">Back</button>
                                  </div>
                               </div>
                            </div>
                         </div>
-                        <div class="col-md-4">
+
+                  <!--========right--side-content========-->
+                        <div class="col-md-4 d-none d-md-block">
                            <div class="number">
-                              <ul>
+                              <ul class="list-unstyled">
                                  <li><h2>12.5%</h2></li>
                                  <li>
                                     <h2>$ 500</h2>
                                     <p>Current Collection</p>
                                  </li>
                                    
-                                 <li><h2>$ 2000</h2>
+                                 <li class="border-0"><h2>$ 2000</h2>
                                     <p>Target Needed</p>
                                  </li>
                                     
@@ -172,6 +199,8 @@
                   </div>
                </div>
             </div>
+   
+         </div>
            
          
         
@@ -206,7 +235,7 @@
                </div>
                <div class="caption-btn pt-md-2">
                   <a href="#">Join Now</a>
-                  <a href="#">Volunteer</a>
+                  <a href="be_come_volunteer.html">Volunteer</a>
                </div>
             </div>
          </div>
@@ -223,7 +252,8 @@
                </div>
                <div class="caption-btn pt-md-2">
                   <a href="#">Join Now</a>
-                  <a href="#">Volunteer</a>
+                  <a href="be_come_volunteer.html">Volunteer</a>
+
                </div>
             </div>
          </div>
@@ -240,7 +270,8 @@
                </div>
                <div class="caption-btn pt-md-2">
                   <a href="#">Join Now</a>
-                  <a href="#">Volunteer</a>
+                  <a href="be_come_volunteer.html">Volunteer</a>
+
                </div>
             </div>
          </div>
@@ -257,7 +288,8 @@
                </div>
                <div class="caption-btn pt-md-2">
                   <a href="#">Join Now</a>
-                  <a href="#">Volunteer</a>
+                  <a href="be_come_volunteer.html">Volunteer</a>
+
                </div>
             </div>
          </div>
@@ -274,7 +306,8 @@
                </div>
                <div class="caption-btn pt-md-2">
                   <a href="#">Join Now</a>
-                  <a href="#">Volunteer</a>
+                  <a href="be_come_volunteer.html">Volunteer</a>
+
                </div>
             </div>
          </div>
@@ -295,7 +328,9 @@
          <div class="frist-involved">
             <h3>GET INVOLVED</h3>
             <h5>TAKE A ACTION</h5>
-         </div>
+         </div> 
+                   
+        
          <div class="frist-involved">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" x="0px"
                y="0px" viewBox="0 0 511.973 511.973" style="enable-background:new 0 0 511.973 511.973;"
@@ -338,7 +373,7 @@
                <g>
                </g>
             </svg>
-            <a href="donate.html">MAKE A <br> DONATION</a>
+            <a href="#donate" data-bs-toggle="modal" data-bs-whatever="donate">MAKE A <br> DONATION</a>
          </div>
          <div class="frist-involved">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
@@ -578,12 +613,12 @@
          <div class="col-xl-7 col-md-6">
             <div class="fund-text">
                <h2>Fundraising for the people and causes you care about</h2>
-               <a href="#">START DONATION </a>
+               <a href="#donate" data-bs-toggle="modal" data-bs-whatever="donate">START DONATION </a>
             </div>
          </div>
          <div class="col-xl-4 offset-xl-1 col-md-6 d-md-block d-none">
             <div class="voluntar-log">
-               <h2 style="transform: rotate(-17deg);"><i class="bi bi-megaphone fa-2x c-red"></i></h2>
+               <h2 style="transform: rotate(-17deg);"><i class="bi bi-megaphone c-red"></i></h2>
                <h4>BECOME A VOLUNTEER</h4>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscelit. Nam malesuada dapibus diam, ut fringilla purus
                   efficitur eget imspurings.

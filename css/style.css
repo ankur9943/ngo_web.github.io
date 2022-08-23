@@ -718,7 +718,11 @@ footer{
 	color:var(--text-secondery);
 	font-size: .88em;
 }
-footer h4{
+footer h4,
+.Categories h4,
+.Tags h4,
+.related-blog h4
+{
 	font-weight: 500;
 	font-size: clamp(1.3rem, 2vw, 1.5rem);
 	margin-bottom: max(2.2vw, 1.2em);
@@ -727,7 +731,10 @@ footer h4{
 	padding-bottom:.5em
 }
 footer h4::after,
-.get-in-touch h4::after{
+.get-in-touch h4::after,
+.Categories h4::after,
+.Tags h4::after,
+.related-blog h4:after{
 	position: absolute;
 	height: 2px;
 	width: 30px;
@@ -1171,6 +1178,123 @@ viewBox="0 0 513.307 513.307"><g><path d="m118.356 340.559c-3.467-2.267-8.115-1.
 	padding:.5rem 2rem;
 	margin-top:2rem
 }
+
+/*=========blog=========*/
+/*--=================blog-==================*/
+.business-blog .card,
+.investor-person .card{
+	background:var(--base-color);
+	border:0px;
+	border-radius:0px;
+	box-shadow: 0 0 10px 2px rgb(218 214 214 / 50%);
+}
+.business-blog .card .card-title{
+	font-size:clamp(1.1em, 2vw, 1.3rem);
+	color: var(--button-colo);
+	padding:.1rem 0 1rem 0;	
+	display: inline-block;
+	font-weight:500;
+	letter-spacing:1.2px
+}
+.business-blog .card .card-text{
+	font-size:clamp(.9em, 2vw, 1rem);
+	color: #454545;
+	padding-block:2rem;
+	line-height:1.6
+}
+.business-blog .card .card-btn a,
+.investor-person .card-btn a{
+	color:var(--button-colo);
+	font-size:1em;
+	display: flex;
+	gap:.5rem;
+	font-weight:600;
+}
+.business-blog .card .card-btn a i,
+.investor-person .card-btn a i{
+	display: block;
+    font-size: 1.8rem;
+}
+.business-blog .card .card-btn a:hover,
+.investor-person .card-btn a:hover{
+	gap:1rem
+}
+.search-blog{
+	background-color:var(--base-color);
+	padding: 3.5rem 1rem;
+	box-shadow: 0 0 10px 2px rgb(218 214 214 / 50%);
+}
+.search-blog .search-blog-felid{
+	display: flex;
+	align-items:center;
+	background: #F6F7F9;
+}
+.search-blog .search-blog-felid .form-control,
+.search-blog .search-blog-felid button{
+	background:transparent;
+	box-shadow:none;
+	border:0px;	
+}
+.search-blog .search-blog-felid button{
+	color:var(--button-colo);
+	font-size:1.4rem;
+	z-index: 1;
+	padding:.4rem 1.5rem;
+	transition:.3s ease-in-out 0s;
+	background-color:var(--base-color);
+	
+}
+.search-blog .search-blog-felid button:hover{
+	background-color:var(--button-colo);
+	color:var(--base-color)
+}
+.related-blog,
+.Categories,
+.Tags {
+	background-color:var(--main-text-color);
+	padding:2rem .3rem 1rem .3rem;
+	box-shadow: 0 0 10px 2px rgb(218 214 214 / 50%);
+	margin-block: max(2vw, 1.2rem);
+	position: relative;
+	padding-inline:1.2em
+}
+.Categories ul li{
+	padding-block:.5rem;
+	
+}
+.Tags ul li a {
+	padding: .4em 1rem;
+	color:var(--base-color)!important;
+	background-color:var(--button-colo);
+	margin:.3em .2em;
+	border-radius:20px;
+	display: inline-block;
+
+}
+.Categories h4::after,
+.Tags h4::after,
+.related-blog h4::after{
+	background:var(--button-colo)!important
+}
+.related-blog .card img{
+	object-fit:cover;
+	aspect-ratio: 1 / 1 
+}
+.related-blog .card-body a {
+    color: #454545;
+    font-size: clamp(.9em, 2vw, 1em);
+    padding-bottom: 0.2rem;
+    display: inline-block;
+    font-weight: 400;
+}
+.related-blog .card-body small i{
+	color:var(--main-bg-color);
+	padding-right:.2rem
+}
+.related-blog .card-body a:hover {
+	color:var(--main-bg-color)
+}
+
 
 
                                                         

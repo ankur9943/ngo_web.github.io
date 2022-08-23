@@ -1,226 +1,433 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>NGO Help Others, Be Happy!</title>
-   <meta name="description" content="NGO Help Others, Be Happy!">
-   <meta name="turbo-visit-control" content="reload">
-   <link rel="icon" href="img/Group 56726.svg">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-   <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-   <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-   <link rel="stylesheet" media="all" href="css/style.css">
-   <link rel="stylesheet" media="all" href="css/media.css">
-
-</head>
-<body>
-   <!--=======navgition========bar======-->
-   <nav class="navbar navbar-expand-md py-md-0 px-lg-0">
-      <div class="container">
-         <a class="navbar-brand" href="Index.html"><img src="img/logo-removebg-preview.png"></a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>NGO Help Others, Be Happy!</title>
+      <meta name="description" content="NGO Help Others, Be Happy!">
+      <meta name="turbo-visit-control" content="reload">
+      <link rel="icon" href="img/Group 56726.svg">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+      <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+      <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+      <link rel="stylesheet" media="all" href="css/style.css">
+      <link rel="stylesheet" media="all" href="css/media.css">
+   </head>
+   <body>
+      <!--=======navgition========bar======-->
+      <nav class="navbar navbar-expand-md py-md-0 px-lg-0">
+         <div class="container">
+            <a class="navbar-brand" href="Index.html"><img src="img/logo-removebg-preview.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+               aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-            id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" aria-dropeffect="flase
+            </button>
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+               id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" aria-dropeffect="flase
                ">
-            <div class="offcanvas-header">
-               <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand" href="Index.html"><img
-                        src="img/logo-removebg-preview.png"></a></h5>
-               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body align-items-md-center">
-               <ul class="navbar-nav mx-md-auto">
-                  <li class="nav-item">
-                     <a class="nav-link" aria-current="page" href="index.html"><span>Home</span></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="about_us.html"><span>About</span></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="involved.html"><span>Get Involved</span></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="thanks.html"><span>Thank you</span></a>
-                  </li>
-                  <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#sub-menu" data-bs-toggle="dropdown">
+               <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand" href="Index.html"><img
+                     src="img/logo-removebg-preview.png"></a></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+               <div class="offcanvas-body align-items-md-center">
+                  <ul class="navbar-nav mx-md-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html"><span>Home</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="about_us.html"><span>About</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="involved.html"><span>Get Involved</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="thanks.html"><span>Thank you</span></a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#sub-menu" data-bs-toggle="dropdown">
                         <span>News & Events</span></a>
-                     <ul class="dropdown-menu d-md-block" id="sub-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                     </ul>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="contact_us.html">
+                        <ul class="dropdown-menu d-md-block" id="sub-menu">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Another action</a></li>
+                           <li><a class="dropdown-item" href="#">Another action</a></li>
+                           <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact_us.html">
                         <span>Contact us</span>
-                     </a>
-                  </li>
-               </ul>
-               <form>
-                  <button class="donate-btn donate">Donate</button>
-               </form>
+                        </a>
+                     </li>
+                  </ul>
+                  <form>
+                     <button class="donate-btn donate" type="button" data-bs-toggle="modal" 
+                        data-bs-target="#donate" data-bs-whatever="donate">Donate</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!--=======navgition========bar==Start====-->
+      <div class="container-fluid">
+         <!-- Vertically centered modal -->
+         <div class="modal fade pe-0" id="donate" aria-hidden="true" aria-labelledby="donateToggleLable" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered  modal-lg">
+               <div class="modal-content">
+                  <button type="button" class="button-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
+                  <div class="row">
+                     <div class="col-md-8">
+                        <div class="doonate-heading ">
+                           <h4 class="text-center">Donate to improve life standard of kids</h4>
+                           <!--=====tabs-donate-amount--=====start===-->
+                           <div class="donate-tab">
+                              <!--==========top=two=tab=====-->
+                              <ul class="tab nav justify-content-center" id="option">
+                                 <li class="nav-item"> 
+                                    <a href="#req" class="nav-link active" data-bs-toggle="tab" date-b-target="#req">One Time</a>
+                                 </li>
+                                 <li>
+                                    <a href="#one" class="nav-link" data-bs-toggle="tab" date-b-target="#one">E-payment</a>
+                                 </li>
+                              </ul>
+                              <!--======tab=main-contant==start=======-->
+                              <div class="tab-content">
+                                 <!--======tab=Recurring=content=======-->
+                                 <div class="tab-pane active" id="req">
+                                    <form>
+                                       <div class="donate-form row">
+                                          <h5 class="text-center">Personal Details</h5>
+                                          <div class="col-md-6"><input type="name" id="name" placeholder="Name" class="form-control"></div>
+                                          <div class="col-md-6"><input type="number" id="d-amount" placeholder="Donate amount" class="form-control"></div>
+                                          <div class="col-12"><input type="email" id="d-email" placeholder="Email" class="form-control "></div>
+                                          <div class="col-12"><input type="text" id="d-add" placeholder="Address" class="form-control  "></div>
+                                          <h6 class="text-center my-3">Bank Details</h6>
+                                          <div class="col-6"><input type="text" placeholder="Bank name" class="form-control"></div>
+                                          <div class="col-6"><input type="number" placeholder="Acount no." class="form-control"></div>
+                                          <div class="col-md-6"><input type="text" placeholder="IFSC code." class="form-control"></div>
+                                       </div>
+                                       <div class="d-form-amount">
+                                          <!-- <ul class="tab nav justify-content-center gap-md-2 gap-1" id="requrment">
+                                             <li class="nav-item"><a href="#amount_1" class="nav-link  active" data-bs-toggle="tab" date-b-target="#amount_1">$ 100</a></li>
+                                             <li class="nav-item"><a href="#amount_2" class="nav-link" data-bs-toggle="tab" date-b-target="#amount_2">$ 200</a></li>
+                                             <li class="nav-item"><a href="#amount_3" class="nav-link " data-bs-toggle="tab" date-b-target="#amount_3">$ 300</a></li>
+                                                                                       
+                                             </ul>
+                                             <div class="tab-content" id="change-amount">
+                                             <div class="tab-pane active" id="amount_1">$ 100</div>
+                                             <div class="tab-pane" id="amount_2">$ 200</div>
+                                             <div class="tab-pane" id="amount_3">$ 300</div>
+                                             </div> -->
+                                       </div>
+                                    </form>
+                                 </div>
+                                 <!--==========tab=One-Time=content--==========-->
+                                 <div class="tab-pane" id="one">
+                                    <form>
+                                       <div class="donate-form row">
+                                          <h5 class="text-center">Personal Details</h5>
+                                          <div class="col-md-12"><input type="name" id="name" placeholder="Name" class="form-control"></div>
+                                          <div class="col-12"><input type="email" id="d-email" placeholder="Email" class="form-control "></div>
+                                          <div class="col-12"><input type="text" id="d-add" placeholder="Address" class="form-control  "></div>
+                                          <div class="col-md-12"><input type="number" id="d-amount" placeholder="Donate amount" class="form-control"></div>
+                                       </div>
+                                    </form>
+                                    <div class="d-form-amount">
+                                       <!----=======fixed-amount-tabs=======-->
+                                       <ul class="tab nav justify-content-center gap-md-2 gap-1 mt-4" id="requrment">
+                                          <li class="nav-item"><a href="#" class="nav-link"><img src="img/phonepe-logo-icon.svg"></a></li>
+                                          <li class="nav-item"><a href="#" class="nav-link"><img src="img/google-pay-icon.svg"></a></li>
+                                          <li class="nav-item"><a href="#" class="nav-link"><img src="img/paytm-icon.svg"></a></li>
+                                       </ul>
+                                       <!--  <div class="tab-content" id="change-amount">
+                                          <div class="tab-pane active" id="amount_1">$ 100</div>
+                                          <div class="tab-pane" id="amount_2">$ 100</div>
+                                          <div class="tab-pane" id="amount_3">$ 100</div>
+                                          </div> --->
+                                    </div>
+                                 </div>
+                                 <button type="submit" class="donate-f-btn">Donate</button>
+                                 <button type="submit" class="donate-_2" data-bs-dismiss="modal" aria-label="Close">Back</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--========right--side-content========-->
+                     <div class="col-md-4 d-none d-md-block">
+                        <div class="number">
+                           <ul class="list-unstyled">
+                              <li>
+                                 <h2>12.5%</h2>
+                              </li>
+                              <li>
+                                 <h2>$ 500</h2>
+                                 <p>Current Collection</p>
+                              </li>
+                              <li class="border-0">
+                                 <h2>$ 2000</h2>
+                                 <p>Target Needed</p>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
-   </nav>
-   <!--=======navgition========bar==Start====-->
-
-   <div class="container">
-       <div class="row">
-           <div class="inner-grid col-lg-8">
-               <div class="row card">
-                   <div class="col-md-6">
-                        <div class="blog-img">
-                            <img src="img/community-delhi.png">
+      <section class="contact_us_top">
+         <div class="container">
+            <div class="pagination text-white">
+               <ol class="breadcrumb ps-3 mb-0">
+                  <li class="breadcrumb-item active " aria-current="page"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item">Blog</li>
+               </ol>
+            </div>
+            <h2>Blog</h2>
+         </div>
+      </section>
+      <div class="container mt-30">
+         <div class="row flex-row-reverse">
+            <div class="col-md-4">
+               <div class="blog-right-content">
+                  <div class="search-blog">
+                     <div class="search-blog-felid">
+                        <input type="search" id="searc" placeholder="Searching..." required class="form-control">
+                        <button><i class="bi bi-send"></i></button>
+                     </div>
+                  </div>
+                  <div class="related-blog ">
+                     <h4>Recent Posts</h4>
+                     <div class="card mb-1 p-2 border-0">
+                        <div class="row g-0">
+                           <div class="col-3">
+                              <img src="img/p3.jpg" class="img-fluid" alt="Start-Business">
+                           </div>
+                           <div class="col-9 gx-0">
+                              <div class="card-body py-0 px-1">
+                                 <a href="#" class="card-title">Customer Onboarding Strategy: A Guide to BusinessTour</a>
+                                 <span>
+                                 <small><i class="icofont-ui-calendar"></i> Oct 29, 2017</small> 
+                                 </span>
+                              </div>
+                           </div>
                         </div>
-                   </div>
-                    <div class="col-md-6 card-body">
-                        <span>May 29, 2014</span>
-                        <h4>Donate to support the cause</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                             Pellentesque fermentum massa vel enim feugiat gravida.
-                              Phasellus velit risus, euismod a...</p>
-                        <a herf="#">Read more</a>
-                    </div>
+                     </div>
+                     <hr>
+                     <div class="card mb-1 p-2 border-0">
+                        <div class="row g-0">
+                           <div class="col-3">
+                              <img src="img/p3.jpg" class="img-fluid" alt="Start-Business">
+                           </div>
+                           <div class="col-9 gx-0">
+                              <div class="card-body py-0 px-1">
+                                 <a href="#" class="card-title">Customer Onboarding Strategy: A Guide to BusinessTour</a>
+                                 <span>
+                                 <small><i class="icofont-ui-calendar"></i> Oct 29, 2017</small> 
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <hr>
+                     <div class="card mb-1 p-2 border-0">
+                        <div class="row g-0">
+                           <div class="col-3">
+                              <img src="img/p3.jpg" class="img-fluid" alt="Start-Business">
+                           </div>
+                           <div class="col-9 gx-0">
+                              <div class="card-body py-0 px-1">
+                                 <a href="#" class="card-title">Customer Onboarding Strategy: A Guide to BusinessTour</a>
+                                 <span>
+                                 <small><i class="icofont-ui-calendar"></i> Oct 29, 2017</small> 
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="Categories px-4">
+                     <h4>Categories</h4>
+                     <ul>
+                        <li><a herf="#">Charity</a></li>
+                        <li><a herf="#">Food</a></li>
+                        <li><a herf="#">Water</a></li>
+                     </ul>
+                  </div>
+                  <div class="Tags px-4">
+                     <h4>Tags</h4>
+                     <ul class="list-unstyled d-flex flex-wrap gap-1">
+                        <li><a herf="#">Charity</a></li>
+                        <li><a herf="#">FoodDonate</a></li>
+                        <li><a herf="#">Food</a></li>
+                        <li><a herf="#">Give</a></li>
+                        <li><a herf="#">Help</a></li>
+                        <li><a herf="#">Poor</a></li>
+                     </ul>
+                  </div>
                </div>
-           </div>
-           <div class="col-md-4">
-               
-           </div>
-       </div>
-   </div>
-
-
-
-
-   <!--=================partner===========-->
-   <section class="partner">
-    <div class="container">
-       <div class="partner-heading text-center">
-          <span class="c-red"><strong>Sponsores</strong></span>
-          <p class="display-6" style="font-weight:500">Our Sponsores</p>
-       </div>
-       <div class="partner-grid">
-          <p><img src="img/partner-frist.png"></p>
-          <p><img src="img/partner-second.png"></p>
-          <p><img src="img/partner-thrid.png"></p>
-          <p><img src="img/partner-four.png"></p>
-          <p><img src="img/partner-five.png"></p>
-       </div>
-    </div>
- </section>
- <!--=================partner===========-->
- <!--================footer======================-->
- <footer>
-    <div class="container px-lg-2 px-md-0 px-lg-3">
-       <div class="news-letter text-center row justify-content-center">
-          <div class="col-xxl-6 col-xl-7 col-lg-7 col-md-8 col-sm-10 px-xl-5">
-             <div class="news-heading">
-                <span>Stay Update</span>
-                <h2>Newsletter</h2>
-             </div>
-             <form class="d-flex gap-2 my-4">
-                <input type="email" name="EMAIL" placeholder="Enter E-Mail Address" required="">
-                <button class="news-letter-btn">Subscribe</button>
-             </form>
-          </div>
-       </div>
-       <div class="footer-grid row">
-          <div class="col-md-12 col-lg-9 px-md-0 mb-lg-5 mb-3">
-             <div class="row footer-bottom">
-                <div class="col-lg-5 col-md-6 col-xl-5">
-                   <div class="about-f-menu">
-                      <h4>About Us</h4>
-                      <P> Nunc commodo tellus di sed molestie quam Etiam c commodo tNunc commodo tellus di sed mole
-                         stie quam
-                         quam
-                         EtiamNunc commodo tellus.
-                      </P>
-                      <p>Nunc commodo tellus di sed molestie quam Etiam c commodo tNunc commodo tellus di sed mole
-                         stie quam
-                         quam
-                      </p>
-                      <ul class="contact-details list-unstyled mb-0">
-                         <li class="my-md-2 my-1"> Call us <span> +91-9201444499</span></li>
-                         <li> Visit us<span> 2976 Washington St San Francisco, CA 94115</span></li>
-                      </ul>
-                   </div>
-                </div>
-                <div class="col-md-3 col-lg-4 col-xl-4">
-                   <div class="f-menu ">
-                      <h4>Latest Posts</h4>
-                      <ul class="list-unstyled mb-0">
-                         <li class="mt-0 pt-0">
-                            <a href="#"> Care for All People</a>
-                            <span>April 19, 2017 </span>
-                         </li>
-                         <li>
-                            <a href="#"> Care for All People</a>
-                            <span>April 19, 2017 </span>
-                         </li>
-                         <li>
-                            <a href="#"> Care for All People</a>
-                            <span>April 19, 2017 </span>
-                         </li>
-                      </ul>
-                   </div>
-                </div>
-                <div class="col-md-3 ps-xl-4">
-                   <div class="contact-f-menu">
-                      <h4>Links</h4>
-                      <ul class="mb-0 ps-0">
-                         <li><a href="#">Home</a></li>
-                         <li><a href="#">About</a></li>
-                         <li><a href="#">Get Involved</a></li>
-                         <li><a href="#">Thank you</a></li>
-                         <li><a href="#">News & Events</a></li>
-                         <li><a href="#">Contact us</a></li>
-                      </ul>
-                   </div>
-                </div>
-             </div>
-          </div>
-          <div class="col-lg-3 col-md-7">
-             <div class="contact-f-map ">
-                <h4>Worldwide Organisations</h4>
-                <figure>
-                   <img src="img/footer-img.png">
-                </figure>
-             </div>
-          </div>
-       </div>
-       <hr>
-       <div class="copy-right d-flex justify-content-between flex-wrap">
-          <span>© 2022 Design by<a href="www.webhut.org"> www.webhut.org</a></span>
-          <div class="top d-flex gap-2">
-             <i class="bi bi-chevron-double-up fa-3x"></i>
-             <span>Back To Top</span>
-          </div>
-          <ul class="list-unstyled mb-0">
-             <li>
-                <a href="#"><i class="bi bi-facebook "></i></a>
-                <a href="#"><i class="bi bi-twitter "></i></a>
-                <a href="#"><i class="bi bi-youtube "></i></a>
-                <a href="#"><i class="bi bi-google "></i></a>
-             </li>
-          </ul>
-       </div>
-    </div>
- </footer>
- <!----================footer======End================ -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
- <script src="js/jquery.hover3d.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
- <script src="js/main.js"></script>
-</body>
+            </div>
+            <div class="col-md-8">
+               <div class="business-blog">
+                  <div class="card mb-3 p-3">
+                     <img src="img/p3.jpg" class="img-fluid" alt="Start-Business">
+                     <div class="card-body">
+                        <h6 class="card-subtitle top-color">Charity</h6>
+                        <a href="#" class="card-title">Card title Customer onboarding there business</a>
+                        <div class="blog-detils">
+                           <span>
+                           <small><i class="icofont-ui-user"></i> DODGERFAN</small>
+                           <small><i class="icofont-ui-calendar"></i> OCT 29, 2017</small> 
+                           </span>
+                           <p class="pt-2 card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida sollicitudin egestas. Ut lobortis eros vitae mauris cursus, vel faucibus turpis</p>
+                        </div>
+                        <div class="card-btn">
+                           <a href="blog-read.html">Read more</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card mb-3 p-3">
+                     <img src="img/p3.jpg" class="img-fluid" alt="Start-Business">
+                     <div class="card-body">
+                        <h6 class="card-subtitle top-color">Charity</h6>
+                        <a href="#" class="card-title">Card title Customer onboarding there business</a>
+                        <div class="blog-detils">
+                           <span>
+                           <small><i class="icofont-ui-user"></i> DODGERFAN</small>
+                           <small><i class="icofont-ui-calendar"></i> OCT 29, 2017</small> 
+                           </span>
+                           <p class="pt-2 card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida sollicitudin egestas. Ut lobortis eros vitae mauris cursus, vel faucibus turpis</p>
+                        </div>
+                        <div class="card-btn">
+                           <a href="blog-read.html">Read more</span></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card mb-3 p-3">
+                     <img src="img/p3.jpg" class="img-fluid" alt="Start-Business">
+                     <div class="card-body">
+                        <h6 class="card-subtitle top-color">Charity</h6>
+                        <a href="#" class="card-title">Card title Customer onboarding there business</a>
+                        <div class="blog-detils">
+                           <span>
+                           <small><i class="icofont-ui-user"></i> DODGERFAN</small>
+                           <small><i class="icofont-ui-calendar"></i> OCT 29, 2017</small> 
+                           </span>
+                           <p class="pt-2 card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida sollicitudin egestas. Ut lobortis eros vitae mauris cursus, vel faucibus turpis</p>
+                        </div>
+                        <div class="card-btn">
+                           <a href="blog-read.html">Read more</span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--=================partner===========-->
+      <!--================footer======================-->
+      <footer>
+         <div class="container px-lg-2 px-md-0 px-lg-3">
+            <div class="news-letter text-center row justify-content-center">
+               <div class="col-xxl-6 col-xl-7 col-lg-7 col-md-8 col-sm-10 px-xl-5">
+                  <div class="news-heading">
+                     <span>Stay Update</span>
+                     <h2>Newsletter</h2>
+                  </div>
+                  <form class="d-flex gap-2 my-4">
+                     <input type="email" name="EMAIL" placeholder="Enter E-Mail Address" required="">
+                     <button class="news-letter-btn">Subscribe</button>
+                  </form>
+               </div>
+            </div>
+            <div class="footer-grid row">
+               <div class="col-md-12 col-lg-9 px-md-0 mb-lg-4 mb-md-3 mb-2">
+                  <div class="row footer-bottom">
+                     <div class="col-lg-5 col-md-6 col-xl-5">
+                        <div class="about-f-menu">
+                           <h4>About Us</h4>
+                           <P> Nunc commodo tellus di sed molestie quam Etiam c commodo tNunc commodo tellus di sed mole
+                              stie quam quam
+                              EtiamNunc commodo tellus.
+                           </P>
+                           <p>Nunc commodo tellus di sed molestie quam Etiam c commodo tNunc commodo tellus di sed mole
+                              stie quam quam
+                           </p>
+                           <ul class="contact-details list-unstyled mb-0">
+                              <li class="my-md-2 my-1"> Call us <span> +91-9201444499</span></li>
+                              <li> Visit us<span> 2976 Washington St San Francisco, CA 94115</span></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-md-3 col-lg-4 col-xl-4">
+                        <div class="f-menu ">
+                           <h4>Latest Posts</h4>
+                           <ul class="list-unstyled mb-0">
+                              <li class="mt-0 pt-0">
+                                 <a href="#"> Care for All People</a>
+                                 <span>April 19, 2017 </span>
+                              </li>
+                              <li>
+                                 <a href="#"> Care for All People</a>
+                                 <span>April 19, 2017 </span>
+                              </li>
+                              <li>
+                                 <a href="#"> Care for All People</a>
+                                 <span>April 19, 2017 </span>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-md-3 ps-xl-4">
+                        <div class="contact-f-menu">
+                           <h4>Links</h4>
+                           <ul class="mb-0 ps-0">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Get Involved</a></li>
+                              <li><a href="#">Thank you</a></li>
+                              <li><a href="#">News & Events</a></li>
+                              <li><a href="#">Contact us</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-7">
+                  <div class="contact-f-map ">
+                     <h4>Worldwide Organisations</h4>
+                     <figure>
+                        <img src="img/footer-img.png">
+                     </figure>
+                  </div>
+               </div>
+            </div>
+            <hr>
+            <div class="copy-right d-flex justify-content-between flex-wrap">
+               <span>© 2022 Design by<a href="www.webhut.org"> www.webhut.org</a></span>
+               <div class="top d-flex gap-2">
+                  <i class="bi bi-chevron-double-up fa-3x"></i>
+                  <span>Back To Top</span>
+               </div>
+               <ul class="list-unstyled mb-0">
+                  <li>
+                     <a href="#"><i class="bi bi-facebook "></i></a>
+                     <a href="#"><i class="bi bi-twitter "></i></a>
+                     <a href="#"><i class="bi bi-youtube "></i></a>
+                     <a href="#"><i class="bi bi-google "></i></a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <!----================footer======End================ -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+         crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="js/jquery.hover3d.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <script src="js/main.js"></script>
+   </body>
 </html>

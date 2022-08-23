@@ -146,7 +146,8 @@ html {
 .fund-text a,
 .send,
 .how-to-help .tab-content a,
-.submit{
+.submit,
+.hidden-volunter{
 	border: 1px solid #f8f9fa;
     font-size: clamp(.88em, 2vw, 1em);
     transition: all .6s ease-in-out 0s;
@@ -160,20 +161,20 @@ html {
 }
 .donate-btn:hover
 {
-	background-color: transparent;
+	background-color: transparent!important;
 }
 .donate,
 .donate-btn{
-	background: var(--base-color);
+	bbackground: var(--ase-color);
     color: var(--button-colo);
     box-shadow: inset 2px 0px 15px -2px #dc354591;
 }
 .donate:hover{
 	color: var(--base-color);
-	box-shadow: inset 60px 0px 15px -2px var(--button-colo),
-	 			inset -60px 0px 15px -2px var(--button-colo),
-				inset 0px 60px 15px -2px var(--button-colo),
-				inset 0px -60px 15px -2px var(--button-colo);
+	box-shadow: inset 60px 0px 15px -2px transparent,
+	 			inset -60px 0px 15px -2px transparent,
+				inset 0px 60px 15px -2px transparent,
+				inset 0px -60px 15px -2px transparent;
 }
 
 
@@ -251,13 +252,15 @@ html {
 }
 .caption-banner .caption-btn a:nth-child(2),
 .how-to-help .tab-content a,
-.fund-text a {
+.fund-text a,
+.hidden-volunter {
 	background-color: var(--text-secondery);
 	border: 1px solid var(--text-secondery)
 }
 .caption-banner .caption-btn a:nth-child(2):hover,
 .how-to-help .tab-content a:hover,
-.fund-text a:hover {
+.fund-text a:hover,
+.hidden-volunter:hover {
 	color: var(--text-secondery);
 	background-color: transparent;
 }

@@ -49,18 +49,19 @@
 	.offcanvas.offcanvas-end {
 	    height: 100vh;
 		z-index: 9;
+		background-color:#630303;
+		color: #FFF;
 		
 	}
-	.navbar-nav .nav-link{
-		color:var(--button-colo)
-	}
+
 	.how-to-help{
 	   background-size:cover
 	}
 	.offcanvas.offcanvas-end .navbar-nav .nav-link{
-		border-bottom: 1px solid rgba(255, 255, 255, .2);
 		padding-block: .7rem;
 		border-width: thin;
+		color:var(--base-color);
+		border-bottom:1px solid rgba(255,255,255,.5)
 	}
 	.offcanvas.offcanvas-end .navbar-nav:last-child{
 		border-bottom: 0px;
@@ -68,6 +69,9 @@
 	.offcanvas.offcanvas-end .navbar-nav .nav-item .dropdown-toggle{
 		display: flex;
 		justify-content: space-between;	
+	}
+	.donate-btn {
+		margin-top:2rem
 	}
 }	
 

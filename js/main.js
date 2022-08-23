@@ -10,16 +10,39 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-var swiper = new Swiper(".gallery", {
-  direction: "horizontal",
-  slidesPerView: 3,
-  spaceBetween: 5,
+var swiper = new Swiper('.gallery', {
+  slidesPerView: 1,
+  slidesPerColumn: 1,
+  spaceBetween: 30,
   mousewheel: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      slidesPerColumn: 4,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+      slidesPerColumn: 3,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+      slidesPerColumn: 2,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 5,
+      slidesPerColumn: 1,
+    }
+  }
 });
+
 
 
 
